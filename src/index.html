@@ -12,6 +12,48 @@
 <body>
   <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
   <include src="./partials/example.html"></include>
+  <include src="./partials/store.html">
+    <store>
+      <h2 class="store-header">STORE</h2>
+      <ul class="list store-list">
+        <li class="store-list-element">
+          <img src="./images/" alt="a small bouquet of orange, red and burgundy flowers" width="136" height="155" />
+          <div class="store-offers">
+            <h3 class="store-offers-item">compliments</h3>
+            <p class="store-offers-item-description">from $15</p>
+          </div>
+        </li>
+        <li class="store-list-element">
+          <img src="./images/img(1)(1).jpg" alt="a small bouquet of pink and white flowers" width="136" height="155" />
+          <div class="store-offers">
+            <h3 class="store-offers-item">bouquets size S</h3>
+            <p class="store-offers-item-description">from $25</p>
+          </div>
+        </li>
+        <li class="store-list-element">
+          <img src="./images/img(2)(1).jpg" alt="a medium-size bouquet of white, blue and purple flowers" width="136"
+            height="155" />
+          <div class="store-offers">
+            <h3 class="store-offers-item">bouquets size M</h3>
+            <p class="store-offers-item-description">from $45</p>
+          </div>
+        </li>
+        <li class="store-list-element">
+          <img src="./images/img(3)(1).jpg" alt="a big bouquet of beige, orange and pink flowers" width="136"
+            height="155" />
+          <div class="store-offers">
+            <h3 class="store-offers-item">bouquets size L</h3>
+            <p class="store-offers-item-description">from $60</p>
+          </div>
+        </li>
+      </ul>
+      <div class="store-button-div">
+        <button type="button" class="store-button" data-modal-open>
+          Order flowers
+        </button>
+      </div>
+    </store>
+  </include>
 
   <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
   <script src="./index.js" type="module"></script>
