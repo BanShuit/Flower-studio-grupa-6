@@ -3,9 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "homepage": "https://BanShuit.github.io/Flower-studio-grupa-6/",
- "scripts": {
-  "build": "parcel build src/*.html --public-url /Flower-studio-grupa-6/"
-},
+  "scripts": {
+    "build": "parcel build src/*.html --public-url /Flower-studio-grupa-6/",
+    "dev": "parcel src/*.html --public-url /Flower-studio-grupa-6/"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/migace/parcel-project-template-pl-main.git"
@@ -22,3 +23,4 @@
     "posthtml-include": "^1.7.4"
   }
 }
+
