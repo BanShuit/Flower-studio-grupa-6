@@ -1,0 +1,94 @@
+:root {
+    --brand-color: #e86f54;
+    --brand-color-hover: #e25b41;
+    --brand-color-focus: #fa6f54;
+    --black: #000000;
+    --white: #ffffff;
+    --error-state: #e74a3b;
+    --correct-state: #3cbc81;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/*STORE*/
+.store-header {
+    margin-left: 16px;
+}
+
+.store-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 32px 16px;
+}
+
+.store-list-element {
+    max-width: calc((100% - 16px) / 2);
+}
+
+.store-offers {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.store-offers-item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+    margin-bottom: 0;
+}
+
+.store-offers-item-description {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14.63px;
+    opacity: 60%;
+    margin-top: 0;
+}
+
+.store-button-div {
+    display: flex;
+    justify-content: center;
+}
+
+.store-button {
+    background-color: var(--brand-color);
+    color: var(--white);
+    cursor: pointer;
+    border: none;
+    border-radius: 38px;
+    font-size: 20px;
+    line-height: 24px;
+    width: 208px;
+    height: 44px;
+}
+
+.store-button:hover {
+    background-color: var(--brand-color-hover);
+}
+
+.store-button:focus {
+    background-color: var(--brand-color-focus);
+}
