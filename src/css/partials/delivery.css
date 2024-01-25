@@ -1,0 +1,130 @@
+:root {
+    --brand-color: #E86F54;
+    --brand-color-hover: #E25B41;
+    --brand-color-focus: #FA6F54;
+    --black: #000000;
+    --white: #FFFFFF;
+    --error-state: #E74A3B;
+    --correct-state: #3CBC81;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--black);
+}
+
+.delivery-box {
+    display: flex;
+}
+
+.delivery-heading {
+    color: var(--black);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.delivery-line {
+    background: var(--black);
+    justify-content: center;
+    margin-top: 35px;
+    margin-left: 14px;
+    width: 148px;
+    height: 1px;
+}
+
+.delivery-container {
+    max-width: 100%;
+    padding-left: 0;
+}
+
+.delivery-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.delivery-paragraph {
+    width: 232px;
+    color: var(--black);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 8px;
+}
+
+.delivery-image {
+    flex-shrink: 0;
+    margin-top: 35px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.delivery-section.delivery-image {      
+    background-image: url(/src/images/image-delivery-mobile.jpg);  
+    }
+}
+
+@media (min-width: 768px) {
+    .delivery-heading {
+        font-size: 44px;
+    }
+
+    .delivery-line {
+        margin-top: 65px;
+        margin-left: 16px;
+        width: 473px;
+    }
+
+    .delivery-container {
+        max-width: 100%;
+        padding-left: 24px;
+    }
+
+    .delivery-paragraph {
+        width: 544px;
+        font-size: 24px;
+        margin-left: 20px;
+    }
+
+    .delivery-image {
+        flex-shrink: 0;
+        margin-top: 35px;
+        width: 768px;
+        height: 264px;
+        flex-shrink: 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .delivery-line {
+        margin-top: 65px;
+        margin-left: 16px;
+        width: 985px;
+    }
+
+    .delivery-container {
+        width: 100%;
+        padding-left: 96px;
+    }
+
+    .delivery-paragraph {
+        width: 232px;
+        font-size: 32px;
+        margin-left: 56px;
+        width: 1088px;
+    }
+
+    .delivery-image {
+        flex-shrink: 0;
+        margin-top: 35px;
+        width: 1280px;
+        height: 391px;
+        flex-shrink: 0;
+    }
+}
