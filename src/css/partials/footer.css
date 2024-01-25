@@ -1,3 +1,13 @@
+:root {
+	--brand-color: #e86f54;
+	--brand-color-hover: #e25b41;
+	--brand-color-focus: #fa6f54;
+	--black: #000000;
+	--white: #ffffff;
+	--error-state: #e74a3b;
+	--correct-state: #3cbc81;
+}
+
 .footer-general {
 	background-color: black;
 }
