@@ -1,63 +1,31 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nagłówek strony</title>
+  <title>Anemone</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
     crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/main.css"
 </head>
 
 <body>
   <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
-  <include src="./partials/example.html"></include>
-  <include src="./partials/store.html">
-    <store>
-      <h2 class="store-header">STORE</h2>
-      <ul class="list store-list">
-        <li class="store-list-element">
-          <img src="./images/" alt="a small bouquet of orange, red and burgundy flowers" width="136" height="155" />
-          <div class="store-offers">
-            <h3 class="store-offers-item">compliments</h3>
-            <p class="store-offers-item-description">from $15</p>
-          </div>
-        </li>
-        <li class="store-list-element">
-          <img src="./images/img(1)(1).jpg" alt="a small bouquet of pink and white flowers" width="136" height="155" />
-          <div class="store-offers">
-            <h3 class="store-offers-item">bouquets size S</h3>
-            <p class="store-offers-item-description">from $25</p>
-          </div>
-        </li>
-        <li class="store-list-element">
-          <img src="./images/img(2)(1).jpg" alt="a medium-size bouquet of white, blue and purple flowers" width="136"
-            height="155" />
-          <div class="store-offers">
-            <h3 class="store-offers-item">bouquets size M</h3>
-            <p class="store-offers-item-description">from $45</p>
-          </div>
-        </li>
-        <li class="store-list-element">
-          <img src="./images/img(3)(1).jpg" alt="a big bouquet of beige, orange and pink flowers" width="136"
-            height="155" />
-          <div class="store-offers">
-            <h3 class="store-offers-item">bouquets size L</h3>
-            <p class="store-offers-item-description">from $60</p>
-          </div>
-        </li>
-        <p>TEst</p>
-      </ul>
-      <div class="store-button-div">
-        <button type="button" class="store-button" data-modal-open>
-          Order flowers
-        </button>
-      </div>
-    </store>
-  </include>
-
+  <include src="./partials/header.html"></include>
+  <main>
+ 
+  <include src="./partials/hero.html"></include>
+  <include src="./partials/about.html"></include>
+  <include src="./partials/store.html"></include>
+  <include src="./partials/delivery.html"></include>
+  <include src="./partials/blog.html"></include>
+ 
+  
+  </main>
+  <include src="./partials/footer.html"></include>
   <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
-  <script src="./index.js" type="module"></script>
 </body>
 
 </html>
