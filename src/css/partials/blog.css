@@ -1,9 +1,128 @@
-:root {
-    --brand-color: #e86f54;
-    --brand-color-hover: #e25b41;
-    --brand-color-focus: #fa6f54;
-    --black: #000000;
-    --white: #ffffff;
-    --error-state: #e74a3b;
-    --correct-state: #3cbc81;
+.blog-h1 {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.blog-section {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 396px;
+  flex-shrink: 0;
+}
+/* HEADLINE */
+.blog-headline {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.hr-blog {
+  width: 202px;
+  height: 1px;
+  background: #000;
+}
+
+/* IMAGES */
+.blog-images {
+}
+.carousel {
+  display: flex;
+  padding: 32px 16px 4px 16px;
+  gap: 16px;
+  overflow-x: hidden;
+  list-style: none;
+}
+
+.flower-photo1 {
+  width: 136px;
+  height: 181px;
+  flex-shrink: 0;
+  background: url(/src/images/flowers-image1-mobile.jpg),
+    lightgray -6.602px -21.498px / 121.324% 118.785% no-repeat;
+}
+.flower-photo2 {
+  width: 136px;
+  height: 181px;
+  flex-shrink: 0;
+  background: url(/src/images/flowers-img2-mobile.jpg),
+    lightgray -4.747px -16.6px / 112.5% 118.343% no-repeat;
+}
+.flower-photo3 {
+  width: 136px;
+  height: 181px;
+  flex-shrink: 0;
+  background: url(/src/images/flowers-image3-mobile.jpg),
+    lightgray -7.971px -59.799px / 121.826% 137.803% no-repeat;
+}
+/* ARROWS */
+.blog-arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.arrowleft {
+  width: 50px;
+  height: 50px;
+}
+.arrowright {
+  width: 50px;
+  height: 50px;
+}
+
+/* TEXT & BUTTON */
+.blog-button {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blog-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.blog-subscribe-button {
+  display: flex;
+  width: 170px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 38px;
+  background: var(--brand-color);
+
+  /* button text */
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 133.333% */
+  /* button text */
+}
+
+.blog-subscribe-button:hover {
+  border-radius: 38px;
+  background: var(--brand-color-hover);
+}
+
+.blog-subscribe-button:focus {
+  border-radius: 38px;
+  background: var(--brand-color-focus);
+  box-shadow: 0px 4px 16px 0px rgba(250, 111, 84, 0.2);
 }
