@@ -84,9 +84,9 @@
   display: none;
 }
 .footer-logo {
-  fill: white;
   width: 73px;
   height: 57px;
+  fill: white;
 }
 
 @media screen and (min-width: 768px) {
