@@ -34,11 +34,8 @@
 <symbol id="icon-phone-black" viewBox="0 0 24 32">
 <path d="M19.635 18.487l-2.451-0.28c-0.589-0.067-1.167 0.135-1.582 0.55l-1.775 1.775c-2.731-1.389-4.969-3.618-6.359-6.359l1.785-1.785c0.415-0.415 0.618-0.994 0.55-1.582l-0.28-2.432c-0.116-0.975-0.936-1.708-1.92-1.708h-1.669c-1.090 0-1.997 0.907-1.93 1.997 0.511 8.24 7.102 14.821 15.332 15.332 1.090 0.068 1.997-0.839 1.997-1.93v-1.669c0.010-0.975-0.724-1.795-1.698-1.911z"></path>
 </symbol>
-<symbol id="icon-Ellipse-2" viewBox="0 0 32 32">
-<path stroke-width="0.8" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M31.6 16c0 8.616-6.984 15.6-15.6 15.6s-15.6-6.984-15.6-15.6c0-8.616 6.984-15.6 15.6-15.6s15.6 6.984 15.6 15.6z"></path>
-</symbol>
-<symbol id="icon-Ellipse-2" viewBox="0 0 32 32">
-<path stroke-width="0.8" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M31.6 16c0 8.616-6.984 15.6-15.6 15.6s-15.6-6.984-15.6-15.6c0-8.616 6.984-15.6 15.6-15.6s15.6 6.984 15.6 15.6z"></path>
+<symbol id="icon-Burger" viewBox="0 0 32 32">
+<path d="M4 5.333h24v2.667h-24v-2.667zM12 14.667h16v2.667h-16v-2.667zM4 24h24v2.667h-24v-2.667z"></path>
 </symbol>
 </defs>
 </svg>
