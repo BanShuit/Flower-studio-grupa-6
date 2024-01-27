@@ -83,10 +83,10 @@ header.modal-open {
     overflow: hidden;
 }
 
-.js-open-menuP{
+/* .js-open-menuP{
 
 }
-
+ */
 .mobile_menu_close {
     display: flex;
     width: 100%;
@@ -130,4 +130,30 @@ header.modal-open {
     text-decoration: none;
     color: inherit;
     display: inline-block;
+}
+
+
+/* =============TABLET & DESCTOP==================== */
+
+@media screen and (min-width: 768px) {
+    .mobile_menu_logo_top,
+    .contacts {
+        display: none;
+    }
+    .menu-header-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 24px;
+    }
+    .list-header {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+    .nav {
+        font-size: 20px;
+        color: var(--black);
+        padding: 0;
+    }
 }
