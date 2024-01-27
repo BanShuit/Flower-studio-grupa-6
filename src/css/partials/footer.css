@@ -15,13 +15,13 @@
   color: white;
   font-family: Inter;
   letter-spacing: 0em;
-  width: 320px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 32px 16px;
   row-gap: 32px;
   margin: 0 auto;
+  width: 320px;
 }
 
 .footer-box {
