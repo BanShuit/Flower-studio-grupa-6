@@ -1,0 +1,168 @@
+:root {
+    --brand-color: #e86f54;
+    --brand-color-hover: #e25b41;
+    --brand-color-focus: #fa6f54;
+    --black: #000000;
+    --white: #ffffff;
+    --error-state: #e74a3b;
+    --correct-state: #3cbc81;
+}
+
+header.modal-open {
+    overflow: hidden;
+}
+
+.border {
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.menu-header-nav {
+    display: none;
+    align-items: center;
+    width: 100%;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.nav {
+    line-height: 1.5;
+    color: var(--white);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.foterros {
+    display: inline-block;
+    stroke-width: 0;
+    stroke: currentColor;
+}
+
+.mobile_menu_logo_top {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+.mobile_menu_logo_top button {
+    background-color: transparent;
+    border-color: transparent;
+
+
+}
+
+.js-menu-container {
+    display: none;
+}
+
+.js-menu-container.is-open {
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--brand-color);
+    flex-direction: column;
+    /* Zmiana na flex-direction */
+    z-index: 1;
+    overflow: hidden;
+}
+
+.mobile_menu_close {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.mobile_menu_close {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.contacts {
+    margin-left: auto;
+    line-height: 1.5;
+    text-decoration: none;
+    display: flex;
+    padding-top: 16px;
+    padding-left: 16px;
+}
+
+.header_symbol {
+    padding: 0;
+    margin-top: 9px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.modal_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.seting {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+/* =============TABLET & DESCTOP==================== */
+
+@media screen and (min-width: 768px) {
+
+    .mobile_menu_logo_top,
+    .contacts {
+        display: none;
+    }
+
+    .menu-header-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 24px;
+    }
+
+    .list-header {
+        display: flex;
+        gap: 24px;
+    }
+
+    .nav {
+        font-size: 20px;
+        color: var(--black);
+        padding: 0;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .list-header {
+        display: flex;
+        gap: 48px;
+    }
+}

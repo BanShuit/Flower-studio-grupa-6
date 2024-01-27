@@ -1,0 +1,149 @@
+:root {
+  --brand-color: #e86f54;
+  --brand-color-hover: #e25b41;
+  --brand-color-focus: #fa6f54;
+  --black: #000000;
+  --white: #ffffff;
+  --error-state: #e74a3b;
+  --correct-state: #3cbc81;
+}
+
+.footer-general {
+  background-color: black;
+}
+.footer-container {
+  color: white;
+  font-family: Inter;
+  letter-spacing: 0em;
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 32px 16px;
+  row-gap: 32px;
+  margin: 0 auto;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+}
+.footer-box-contacts {
+  width: 130px;
+}
+.footer-box-media {
+  width: 130px;
+}
+
+.footer-header {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  margin: 0;
+  padding: 0;
+}
+.footer-list {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.footer-list-openingtimes {
+  padding: 0;
+}
+.footer-text {
+  list-style: none;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+}
+.footer-link {
+  text-decoration: none;
+  color: white;
+}
+.footer-email {
+  overflow-wrap: break-word;
+  inline-size: 104px;
+}
+.footer-svg-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  column-gap: 14px;
+}
+.footer-svg {
+  width: 28px;
+  height: 28px;
+  fill: white;
+}
+
+.footer-box-logo {
+  display: none;
+}
+.footer-logo {
+  width: 73px;
+  height: 57px;
+  fill: white;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    width: 768px;
+    flex-wrap: nowrap;
+    padding: 60px 40px 54px 24px;
+  }
+  .footer-header {
+    font-size: 18px;
+    line-height: 24.2px;
+  }
+  .footer-text {
+    font-size: 16px;
+    line-height: 19.36px;
+  }
+  .footer-email {
+    overflow-wrap: normal;
+  }
+  .footer-svg-wrapper {
+    flex-direction: column;
+    row-gap: 13px;
+  }
+  .footer-box-navigation,
+  .footer-box-openingtimes {
+    width: 144px;
+    margin-right: 44px;
+  }
+  .footer-box-contacts {
+    width: 236px;
+    margin-right: 64px;
+  }
+  .footer-box-media {
+    width: 29px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer-container {
+    width: 1280px;
+    padding: 72px 48px 72px 24px;
+  }
+  .footer-box-logo {
+    display: flex;
+    margin-right: 210px;
+  }
+  .footer-box-navigation {
+    width: 116px;
+    margin-right: 96px;
+  }
+  .footer-box-openingtimes {
+    width: 144px;
+    margin-right: 96px;
+  }
+
+  .footer-box-contacts {
+    width: 236px;
+    margin-right: 208px;
+  }
+}
