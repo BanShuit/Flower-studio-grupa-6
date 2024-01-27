@@ -12,11 +12,14 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: var(--black);
 }
+section {
+  margin: auto;
+}
 
 .delivery-section {
-  width: 320px;
   height: 457px;
   flex-shrink: 0;
+  margin: auto;
 }
 
 .delivery-box {
@@ -111,7 +114,7 @@ body {
 .delivery-image {
   flex-shrink: 0;
 
-  width: 320px;
+  width: 100%;
   height: 135px;
   margin-top: 26px;
 }
@@ -124,7 +127,6 @@ body {
 
 @media (min-width: 768px) {
   .delivery-section {
-    width: 768px;
     height: 737px;
     flex-shrink: 0;
   }
@@ -212,14 +214,13 @@ body {
   .delivery-image {
     flex-shrink: 0;
     margin-top: 40px;
-    width: 768px;
+    width: 100%;
     height: 264px;
   }
 }
 
 @media (min-width: 1280px) {
   .delivery-section {
-    width: 1280px;
     height: 1017px;
     flex-shrink: 0;
   }
@@ -238,7 +239,7 @@ body {
   }
 
   .delivery-container {
-    widt: 100%;
+    width: 100%;
     margin-left: 96px;
   }
 
@@ -258,7 +259,7 @@ body {
   .delivery-image {
     flex-shrink: 0;
     margin-top: 60px;
-    width: 1280px;
+    width: 100%;
     height: 391px;
   }
 }
