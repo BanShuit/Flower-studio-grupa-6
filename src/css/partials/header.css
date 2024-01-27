@@ -85,10 +85,6 @@ header.modal-open {
     overflow: hidden;
 }
 
-/* .js-open-menuP{
-
-}
- */
 .mobile_menu_close {
     display: flex;
     width: 100%;
@@ -114,6 +110,7 @@ header.modal-open {
     padding: 0;
     margin-top: 9px;
     margin-right: 16px;
+    cursor: pointer;
 }
 
 .modal_list {
@@ -132,6 +129,7 @@ header.modal-open {
     text-decoration: none;
     color: inherit;
     display: inline-block;
+    cursor: pointer;
 }
 
 
@@ -160,5 +158,11 @@ header.modal-open {
         font-size: 20px;
         color: var(--black);
         padding: 0;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .list-header {
+        display: flex;
+        gap: 48px;
     }
 }
