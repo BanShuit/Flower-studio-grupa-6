@@ -7,3 +7,88 @@
     --error-state: #e74a3b;
     --correct-state: #3cbc81;
 }
+
+/*mobile*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+
+  @media screen and (max-width:480px) {
+    
+  .section-hero{
+   margin-left: 16px;
+   margin-right: 16px;
+   margin-bottom:100px
+  }
+  .container-hero{
+    inline-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+  }
+  
+  .hero-img{
+    width: 145px;
+    height: 274px;
+    margin-left: 60px;
+    margin-right: 5px;
+    align-content: center;
+    display: flex;
+  }
+  
+  .content-hero{
+    margin-top: 0px;
+    margin-left: calc(50% - 133.5px);
+    margin-right: auto;
+    align-items: center;
+    display: -webkit-inline-box;
+  }
+  .title-hero {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 63px;
+    width: 288px;
+    height: 63px;
+    margin-top: -27px;
+    margin-left: calc((100% - 288px)/2);
+    margin-right: calc((100% - 288px)/2);
+    transform: translate(0%, 0%);
+    z-index:1;
+    
+  }
+  .items-hero{
+    position: absolute;
+    width: 46px;
+    height: 34px;
+    margin-top: 120px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    font-family: Montserrat;
+  }
+  .button-hero {
+    display: inline-flex;
+    border: none;
+    background:none;
+    margin-left: 1px;
+    margin-top: 100px;
+    cursor: pointer;
+    width: 64px;
+    height: 76px;
+    position: absolute
+  }
+  .hero-btn {
+    border:none;
+    position: absolute;
+    width: 76px;
+    height: 76px;
+  }
+  
+  }
+  
+  /*tablet*
