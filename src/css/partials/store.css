@@ -27,6 +27,8 @@ ol {
     padding-left: 0;
 }
 
+
+
 .link {
     text-decoration: none;
 }
@@ -229,7 +231,7 @@ ol {
     max-width: 272px;
     height: 357px;
     background-color: var(--white);
-    position: absolute;
+    position: fixed;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
