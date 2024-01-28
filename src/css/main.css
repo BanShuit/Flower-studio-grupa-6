@@ -5,3 +5,17 @@
 @import url(./partials/footer.css);
 @import url(./partials/hero.css);
 @import url(./partials/header.css);
+.general-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 60px;
+    min-width: 320px;
+    width: 100%;
+    align-items: center;
+  }
+  @media screen and (min-width: 1280px) {
+    .general-container {
+      max-width: 1280px;
+    }
+  }
+  
