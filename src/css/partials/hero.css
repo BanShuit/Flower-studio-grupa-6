@@ -211,10 +211,11 @@
   height: 357px;
   background-color: var(--white);
   position: fixed;
-  top: 15%;
+  top: 55%;
   transform: translate(-25%, -25%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 28px 16px;
+  z-index: 100;
 }
 
 .is-hidden {
