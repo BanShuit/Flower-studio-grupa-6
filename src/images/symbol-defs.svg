@@ -37,5 +37,11 @@
 <symbol id="icon-Ellipse-2" viewBox="0 0 32 32">
 <path stroke-width="0.8" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M31.6 16c0 8.616-6.984 15.6-15.6 15.6s-15.6-6.984-15.6-15.6c0-8.616 6.984-15.6 15.6-15.6s15.6 6.984 15.6 15.6z"></path>
 </symbol>
+<symbol id="arrow-right" viewBox="0 0 32 32">
+<path d="M21.674 14.79l1.203 0.818-22.877 0.001v0.64l22.733-0.001-1.133 0.651 0.319 0.555 2.608-1.498-2.493-1.695-0.36 0.529z"></path>
+</symbol>
+<symbol id="arrow-left" viewBox="0 0 32 32">
+<path d="M7.703 17.067l-1.203-0.818 22.877-0.001v-0.64l-22.733 0.001 1.133-0.651-0.319-0.555-2.608 1.498 2.493 1.695 0.36-0.529z"></path>
+</symbol>
 </defs>
 </svg>
