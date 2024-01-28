@@ -1,6 +1,6 @@
 <section class="store general-container">
   <div class="store-header-div">
-    <h2 class="store-header">STORE</h2>
+    <h2 class="store-header"  id="store">STORE</h2>
   </div>
   <div class="store-main-div">
     <ul class="store-list">
@@ -104,46 +104,48 @@
   <div class="store-button-div">
     <button type="button" class="store-button" data-modal-open>Order flowers</button>
   </div>
-  <div class="modal-contact is-hidden" data-modal>
-    <button type="button" class="close-button-modal" data-modal-close>
-      <svg width="18" height="18" class="icon-x">
-        <use href="/src/images/symbol-defs.svg#icon-x-modl"></use>
-      </svg>
-    </button>
-    <div>
-      <h4 class="title-contact">Contact us</h4>
-      <p class="legend">
-        If you have any additional questions or you want to clarify something before you make an
-        order please fill in your contact details. We will call you back.
-      </p>
-      <form>
-        <div class="form">
-          <label class="label" for="user-name">Name</label>
-          <input
-            class="input"
-            type="text"
-            id="user-name"
-            name="user-name"
-            placeholder="Your name"
-            required
-            pattern="[A-Za-z]{5,}"
-            title="Must contain only uppercase and lowercase letter, and at least 5 characters"
-          />
-        </div>
-        <div class="form">
-          <label class="label" for="email">Email</label>
-          <input
-            class="input"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your email"
-            required
-            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-          />
-        </div>
-        <button class="button-send" type="submit">Send</button>
-      </form>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal-contact">
+      <button type="button" class="close-button-modal" data-modal-close>
+        <svg width="18" height="18" class="icon-x">
+          <use href="/src/images/symbol-defs.svg#icon-x-modl"></use>
+        </svg>
+      </button>
+      <div>
+        <h4 class="title-contact">Contact us</h4>
+        <p class="legend">
+          If you have any additional questions or you want to clarify something before you make an
+          order please fill in your contact details. We will call you back.
+        </p>
+        <form>
+          <div class="form">
+            <label class="label" for="user-name">Name</label>
+            <input
+              class="input"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Your name"
+              required
+              pattern="[A-Za-z]{5,}"
+              title="Must contain only uppercase and lowercase letter, and at least 5 characters"
+            />
+          </div>
+          <div class="form">
+            <label class="label" for="email">Email</label>
+            <input
+              class="input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email"
+              required
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+            />
+          </div>
+          <button class="button-send" type="submit">Send</button>
+        </form>
+      </div>
     </div>
   </div>
 </section>
