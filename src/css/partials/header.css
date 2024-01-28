@@ -85,14 +85,12 @@ header.modal-open {
     overflow: hidden;
 }
 
-
-.js-open-menuP{
 .mobile_menu_close {
     display: flex;
     width: 100%;
     justify-content: flex-end;
-
 }
+
 .mobile_menu_close {
     display: flex;
     width: 100%;
@@ -163,29 +161,6 @@ header.modal-open {
     }
 }
 
-
-/* =============TABLET & DESCTOP==================== */
-
-@media screen and (min-width: 768px) {
-    .mobile_menu_logo_top,
-    .contacts {
-        display: none;
-    }
-    .menu-header-nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 24px;
-    }
-    .list-header {
-        display: flex;
-        justify-content: center;
-        gap: 24px;
-    }
-    .nav {
-        font-size: 20px;
-        color: var(--black);
-        padding: 0;
 @media screen and (min-width: 1280px) {
     .list-header {
         display: flex;
