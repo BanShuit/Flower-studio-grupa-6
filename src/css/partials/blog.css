@@ -307,8 +307,13 @@ ol {
   }
   .carousel {
     display: flex;
+
     gap: 31px;
     flex-wrap: nowrap;
+
+    padding: 122 0 0 0;
+    gap: 31px;
+
   }
   .flower-photo1 {
     width: 390px;
