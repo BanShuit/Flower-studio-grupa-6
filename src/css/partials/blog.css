@@ -6,6 +6,13 @@
   --white: #ffffff;
   --error-state: #e74a3b;
   --correct-state: #3cbc81;
+  --brand-color: #e86f54;
+  --brand-color-hover: #e25b41;
+  --brand-color-focus: #fa6f54;
+  --black: #000000;
+  --white: #ffffff;
+  --error-state: #e74a3b;
+  --correct-state: #3cbc81;
 }
 
 body {
@@ -35,7 +42,7 @@ ol {
 
 @media (min-width: 320px) {
   .blog-h1 {
-    color: #000;
+    color: var(--black);
     font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
@@ -50,6 +57,7 @@ ol {
     width: 100%;
     flex-shrink: 0;
     background: var(--white);
+    padding-top: 60px;
     padding-bottom: 60px;
   }
   /* HEADLINE */
@@ -62,7 +70,7 @@ ol {
   .hr-blog {
     width: 202px;
     height: 1px;
-    background: #000;
+    background: var(--black);
     padding-right: 16px;
   }
 
@@ -118,7 +126,7 @@ ol {
     align-items: center;
     justify-content: center;
 
-    color: #000;
+    color: var(--black);
     text-align: center;
     font-family: Montserrat;
     font-size: 18px;
@@ -139,7 +147,7 @@ ol {
     background: var(--brand-color);
 
     /* button text */
-    color: #fff;
+    color: var(--white);
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
@@ -158,15 +166,21 @@ ol {
     background: var(--brand-color-focus);
     box-shadow: 0px 4px 16px 0px rgba(250, 111, 84, 0.2);
   }
+  .arrowleft,
+  .arrowright {
+    width: 50px;
+    height: 50px;
+  }
 }
 @media (min-width: 768px) {
   .blog-section {
     width: 768px;
+    padding-top: 100px;
     padding-bottom: 100px;
   }
   /* BLOG - Headline tablet */
-  .blog-h1 {
-    color: #000;
+  .blog-h2 {
+    color: var(--black);
     font-family: Montserrat;
     font-size: 44px;
     font-style: normal;
@@ -178,14 +192,14 @@ ol {
   .hr-blog {
     width: 573px;
     height: 1px;
-    background: #000;
+    background: var(--black);
     padding-right: 24px;
   }
 
   .carousel {
     display: flex;
     padding: 60px 32px 8px 25px;
-    gap: 16px;
+    gap: 32px;
     overflow-x: hidden;
   }
   .flower-photo1 {
@@ -225,7 +239,7 @@ ol {
   }
 
   .blog-text {
-    color: #000;
+    color: var(--black);
     font-family: Montserrat;
     font-size: 32px;
     font-style: normal;
@@ -243,7 +257,7 @@ ol {
     gap: 10px;
 
     /* BUTTON TEXT */
-    color: #fff;
+    color: var(--white);
     font-family: Montserrat;
     font-size: 28px;
     font-style: normal;
@@ -259,7 +273,7 @@ ol {
     height: 64px;
     flex-shrink: 0;
     stroke-width: 1px;
-    stroke: #fff;
+    stroke: var(--white);
     padding: 332px 670px 338px 34px;
   }
   .eclipse-right {
@@ -267,7 +281,7 @@ ol {
     height: 64px;
     flex-shrink: 0;
     stroke-width: 1px;
-    stroke: #fff;
+    stroke: var(--white);
     padding: 332px 33px 338px 671px;
   }
   .arrow-left-tablet {
@@ -275,14 +289,14 @@ ol {
     height: 0px;
     flex-shrink: 0;
     stroke-width: 1px;
-    stroke: #fff;
+    stroke: var(--white);
   }
   .arrow-right-tablet {
     width: 66px;
     height: 0px;
     flex-shrink: 0;
     stroke-width: 1px;
-    stroke: #fff;
+    stroke: var(--white);
   }
 }
 
@@ -305,6 +319,7 @@ ol {
   .carousel {
     display: flex;
     padding: 122 0 0 0;
+    gap: 31px;
   }
   .flower-photo1 {
     width: 390px;
