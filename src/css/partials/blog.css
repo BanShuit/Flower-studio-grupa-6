@@ -51,14 +51,16 @@ ol {
   }
 
   .blog-section {
-    width: 320px;
+    min-width: 320px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     flex-shrink: 0;
     background: var(--white);
     padding-top: 60px;
     padding-bottom: 60px;
+    margin: 0 auto 60px;
   }
   /* HEADLINE */
   .blog-headline {
@@ -89,6 +91,7 @@ ol {
 
   .carousel {
     display: flex;
+    flex-wrap: nowrap;
     padding: 32px 16px 4px 16px;
     gap: 16px;
     overflow-x: hidden;
@@ -98,22 +101,16 @@ ol {
     width: 136px;
     height: 181px;
     flex-shrink: 0;
-    background: url(/src/images/flowers-img4-mobile.jpg),
-      lightgray -6.602px -21.498px / 121.324% 118.785% no-repeat;
   }
   .flower-photo2 {
     width: 136px;
     height: 181px;
     flex-shrink: 0;
-    background: url(/src/images/flowers-img5-mobile.jpg),
-      lightgray -4.747px -16.6px / 112.5% 118.343% no-repeat;
   }
   .flower-photo3 {
     width: 136px;
     height: 181px;
     flex-shrink: 0;
-    background: url(/src/images/flowers-img6-mobile.jpg),
-      lightgray -7.971px -59.799px / 121.826% 137.803% no-repeat;
   }
   /* TEXT & BUTTON */
   .blog-button {
@@ -198,6 +195,7 @@ ol {
 
   .carousel {
     display: flex;
+    flex-wrap: nowrap;
     padding: 60px 32px 8px 25px;
     gap: 32px;
     overflow-x: hidden;
@@ -206,25 +204,16 @@ ol {
     width: 344px;
     height: 398px;
     flex-shrink: 0;
-
-    background: url(/src/images/flowers-img4-mobile.jpg),
-      lightgray -5.993px -137.093px / 105.231% 136.826% no-repeat;
   }
   .flower-photo2 {
     width: 344px;
     height: 398px;
     flex-shrink: 0;
-
-    background: url(/src/images/flowers-img5-mobile.jpg),
-      lightgray -1px -50.2px / 100.581% 121.709% no-repeat;
   }
   .flower-photo3 {
     width: 344px;
     height: 398px;
     flex-shrink: 0;
-
-    background: url(/src/images/flowers-img6-mobile.jpg),
-      lightgray -8.567px -136.283px / 107.226% 139.518% no-repeat;
   }
 
   .blog-arrows {
@@ -318,29 +307,28 @@ ol {
   }
   .carousel {
     display: flex;
+
+    gap: 31px;
+    flex-wrap: nowrap;
+
     padding: 122 0 0 0;
     gap: 31px;
+
   }
   .flower-photo1 {
     width: 390px;
     height: 421px;
     flex-shrink: 0;
-    background: url(/src/images/flowers-img4-mobile.jpg),
-      lightgray -8.318px -126.798px / 104.697% 145.854% no-repeat;
   }
   .flower-photo2 {
     width: 390px;
     height: 421px;
     flex-shrink: 0;
-    background: url(/src/images/flowers-img5-mobile.jpg),
-      lightgray -8px -79.9px / 104.615% 135.677% no-repeat;
   }
   .flower-photo3 {
     width: 390px;
     height: 421px;
     flex-shrink: 0;
-    background: url(/src/images/flowers-img6-mobile.jpg),
-      lightgray -4.942px -124.537px / 103.59% 144.463% no-repeat;
   }
   .blog-arrows {
     display: inline-flex;
