@@ -1,4 +1,4 @@
-<about>
+<section class="general-container">
   <div class="header-about-container">
     <h2 class="about-header">About</h2>
   </div>
@@ -10,10 +10,22 @@
     </p>
     <div class="about-photo">
       <picture>
-        <source srcset="/src/images/image-about.jpg" media="(min-width: 1158px)" />
-        <source srcset="/src/images/image-about-tablet.jpg" media="(min-width: 768px)" />
-        <img src="/src/images/image-about-tablet.jpg" alt="two pink flowers" />
+        <source
+          srcset="/src/images/image-about.jpg"
+          srcset="/src/images/image-about@2x.jpg"
+          media="(min-width: 1158px)"
+        />
+        <source
+          srcset="/src/images/image-about-tablet.jpg"
+          srcset="/src/images/image-about-tablet@2x.jpg"
+          media="(min-width: 768px)"
+        />
+        <img
+          src="/src/images/image-about-mobile.jpg"
+          srcset="/src/images/image-about-mobile@2x.jpg"
+          alt="two pink flowers"
+        />
       </picture>
     </div>
   </div>
-</about>
+</section>
