@@ -239,7 +239,7 @@ section {
   }
 
   .delivery-container {
-    widt: 100%;
+    width: 100%;
     margin-left: 96px;
   }
 
@@ -261,5 +261,20 @@ section {
     margin-top: 60px;
     width: 100%;
     height: 391px;
+  }
+}
+
+.general-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 60px;
+  min-width: 320px;
+  width: 100%;
+  align-items: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .general-container {
+    max-width: 1280px;
   }
 }
