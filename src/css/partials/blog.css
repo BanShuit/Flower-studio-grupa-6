@@ -1,9 +1,359 @@
 :root {
-    --brand-color: #e86f54;
-    --brand-color-hover: #e25b41;
-    --brand-color-focus: #fa6f54;
-    --black: #000000;
-    --white: #ffffff;
-    --error-state: #e74a3b;
-    --correct-state: #3cbc81;
+  --brand-color: #e86f54;
+  --brand-color-hover: #e25b41;
+  --brand-color-focus: #fa6f54;
+  --black: #000000;
+  --white: #ffffff;
+  --error-state: #e74a3b;
+  --correct-state: #3cbc81;
+  --brand-color: #e86f54;
+  --brand-color-hover: #e25b41;
+  --brand-color-focus: #fa6f54;
+  --black: #000000;
+  --white: #ffffff;
+  --error-state: #e74a3b;
+  --correct-state: #3cbc81;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* BLOG */
+
+@media (min-width: 320px) {
+  .blog-h1 {
+    color: var(--black);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .blog-section {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-shrink: 0;
+    background: var(--white);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  /* HEADLINE */
+  .blog-headline {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 16px;
+  }
+  .hr-blog {
+    width: 202px;
+    height: 1px;
+    background: var(--black);
+    padding-right: 16px;
+  }
+
+  /* ARROWS */
+  .blog-arrows {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .blog-eclipse {
+    display: none;
+  }
+  /* IMAGES */
+
+  .carousel {
+    display: flex;
+    padding: 32px 16px 4px 16px;
+    gap: 16px;
+    overflow-x: hidden;
+  }
+
+  .flower-photo1 {
+    width: 136px;
+    height: 181px;
+    flex-shrink: 0;
+    background: url(/src/images/flowers-img4-mobile.jpg),
+      lightgray -6.602px -21.498px / 121.324% 118.785% no-repeat;
+  }
+  .flower-photo2 {
+    width: 136px;
+    height: 181px;
+    flex-shrink: 0;
+    background: url(/src/images/flowers-img5-mobile.jpg),
+      lightgray -4.747px -16.6px / 112.5% 118.343% no-repeat;
+  }
+  .flower-photo3 {
+    width: 136px;
+    height: 181px;
+    flex-shrink: 0;
+    background: url(/src/images/flowers-img6-mobile.jpg),
+      lightgray -7.971px -59.799px / 121.826% 137.803% no-repeat;
+  }
+  /* TEXT & BUTTON */
+  .blog-button {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--black);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .blog-subscribe-button {
+    display: flex;
+    width: 170px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 38px;
+    background: var(--brand-color);
+
+    /* button text */
+    color: var(--white);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+    /* button text */
+  }
+
+  .blog-subscribe-button:hover {
+    border-radius: 38px;
+    background: var(--brand-color-hover);
+  }
+
+  .blog-subscribe-button:focus {
+    border-radius: 38px;
+    background: var(--brand-color-focus);
+    box-shadow: 0px 4px 16px 0px rgba(250, 111, 84, 0.2);
+  }
+  .arrowleft,
+  .arrowright {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .blog-section {
+    width: 768px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  /* BLOG - Headline tablet */
+  .blog-h2 {
+    color: var(--black);
+    font-family: Montserrat;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 16px;
+  }
+
+  .hr-blog {
+    width: 573px;
+    height: 1px;
+    background: var(--black);
+    padding-right: 24px;
+  }
+
+  .carousel {
+    display: flex;
+    padding: 60px 32px 8px 25px;
+    gap: 32px;
+    overflow-x: hidden;
+  }
+  .flower-photo1 {
+    width: 344px;
+    height: 398px;
+    flex-shrink: 0;
+
+    background: url(/src/images/flowers-img4-mobile.jpg),
+      lightgray -5.993px -137.093px / 105.231% 136.826% no-repeat;
+  }
+  .flower-photo2 {
+    width: 344px;
+    height: 398px;
+    flex-shrink: 0;
+
+    background: url(/src/images/flowers-img5-mobile.jpg),
+      lightgray -1px -50.2px / 100.581% 121.709% no-repeat;
+  }
+  .flower-photo3 {
+    width: 344px;
+    height: 398px;
+    flex-shrink: 0;
+
+    background: url(/src/images/flowers-img6-mobile.jpg),
+      lightgray -8.567px -136.283px / 107.226% 139.518% no-repeat;
+  }
+
+  .blog-arrows {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 25px;
+  }
+  .arrowleft,
+  .arrowright {
+    width: 61px;
+    height: 61px;
+  }
+
+  .blog-text {
+    color: var(--black);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .blog-subscribe-button {
+    /* BUTTON */
+    display: flex;
+    width: 280px;
+    height: 64px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    /* BUTTON TEXT */
+    color: var(--white);
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 85.714% */
+  }
+
+  .blog-eclipse {
+    display: hidden;
+  }
+  .eclipse-left {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    stroke-width: 1px;
+    stroke: var(--white);
+    padding: 332px 670px 338px 34px;
+  }
+  .eclipse-right {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    stroke-width: 1px;
+    stroke: var(--white);
+    padding: 332px 33px 338px 671px;
+  }
+  .arrow-left-tablet {
+    width: 66px;
+    height: 0px;
+    flex-shrink: 0;
+    stroke-width: 1px;
+    stroke: var(--white);
+  }
+  .arrow-right-tablet {
+    width: 66px;
+    height: 0px;
+    flex-shrink: 0;
+    stroke-width: 1px;
+    stroke: var(--white);
+  }
+}
+
+@media (min-width: 1280px) {
+  .blog-section {
+    width: 1280px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .blog-headline {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .hr-blog {
+    width: 1085px;
+    height: 1px;
+  }
+  .carousel {
+    display: flex;
+    padding: 122 0 0 0;
+    gap: 31px;
+  }
+  .flower-photo1 {
+    width: 390px;
+    height: 421px;
+    flex-shrink: 0;
+    background: url(/src/images/flowers-img4-mobile.jpg),
+      lightgray -8.318px -126.798px / 104.697% 145.854% no-repeat;
+  }
+  .flower-photo2 {
+    width: 390px;
+    height: 421px;
+    flex-shrink: 0;
+    background: url(/src/images/flowers-img5-mobile.jpg),
+      lightgray -8px -79.9px / 104.615% 135.677% no-repeat;
+  }
+  .flower-photo3 {
+    width: 390px;
+    height: 421px;
+    flex-shrink: 0;
+    background: url(/src/images/flowers-img6-mobile.jpg),
+      lightgray -4.942px -124.537px / 103.59% 144.463% no-repeat;
+  }
+  .blog-arrows {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 25px;
+  }
+  .arrowleft,
+  .arrowright {
+    width: 61px;
+    height: 61px;
+  }
+
+  .blog-eclipse {
+    display: none;
+  }
 }
