@@ -17,34 +17,16 @@ section {
 }
 
 .delivery-section {
+  width: 100%;
   height: 457px;
   flex-shrink: 0;
   margin:auto;
 }
 
 .delivery-box {
-  display: flex;
   margin-top: 0;
   margin-bottom: 32px;
   margin-left: 16px;
-}
-
-.delivery-heading {
-  color: var(--black);
-  font-family: Montserrat;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.delivery-line {
-  background: var(--black);
-  justify-content: center;
-  margin-top: 15px;
-  margin-left: 14px;
-  width: 148px;
-  height: 1px;
 }
 
 .delivery-container {
@@ -113,16 +95,44 @@ section {
 
 .delivery-image {
   flex-shrink: 0;
-
+  margin-top: 26px;
+  width: 320px;
   width: 100%;
   height: 135px;
-  margin-top: 26px;
+}
+
+.delivery-picture {
+}
+
+.delivery-line {
+  margin-left: 16px;
+  text-transform: uppercase;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.delivery-line::after {
+  margin-left: 14px;
+  margin-right: 16px;
+  height: 1px;
+  content: ' ';
+  text-shadow: none;
+  background-color: var(--black);
+  flex-grow: 1;
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .delivery-section.delivery-image {
     background-image: url(/src/images/image-delivery-mobile.jpg);
   }
+}
+
+@media (min-width: 480px) {
 }
 
 @media (min-width: 768px) {
@@ -138,14 +148,12 @@ section {
     margin-left: 24px;
   }
 
-  .delivery-heading {
+  .delivery-line {
     font-size: 44px;
   }
 
-  .delivery-line {
-    margin-top: 30px;
-    margin-left: 16px;
-    width: 473px;
+  .delivery-line::after {
+    min-width: 968px;
   }
 
   .delivery-container {
@@ -226,16 +234,14 @@ section {
   }
 
   .delivery-box {
-    display: flex;
+    width: 100%;
     margin-top: 0;
     margin-bottom: 80px;
     margin-left: 24px;
   }
 
-  .delivery-line {
-    margin-top: 30px;
-    margin-left: 16px;
-    width: 985px;
+  .delivery-line::after {
+    min-width: 1050px;
   }
 
   .delivery-container {

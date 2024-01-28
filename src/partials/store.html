@@ -5,6 +5,7 @@
   <div class="store-main-div">
     <ul class="store-list">
       <li class="store-list-element">
+        <picture class="img-2">
         <picture class="img-1">
           <source
             srcset="/src/images/bouquet3-tablet.jpg"
@@ -29,6 +30,9 @@
       </li>
       <li class="store-list-element">
         <picture>
+          <img
+            src="/src/images/bouquet1-mobile.jpg"
+            srcset="/src/images/bouquet1@2x.jpg"
           <source
             srcset="/src/images/bouquet1-tablet.jpg"
             srcset="/src/images/bouquet1-tablet@2x.jpg"
@@ -104,6 +108,102 @@
   <div class="store-button-div">
     <button type="button" class="store-button" data-modal-open>Order flowers</button>
   </div>
+</store>
+    <div class="store-header-div">
+</store>
+<section class="store">
+    <div class="store-header-div">
+        <h2 class="store-header">STORE</h2>
+    </div>
+    <div class="store-main-div">
+        <ul class="store-list">
+            <li class="store-list-element">
+                <picture class="img-1">
+                    <source srcset="/src/images/bouquet3-tablet.jpg" srcset="/src/images/bouquet3-tablet@x2.jpg"
+                        media="(min-width: 768px) and (max-width: 1158px)" />
+                    <source srcset="/src/images/bouquet3.jpg" srcset="/src/images/bouquet3@2x.jpg"
+                        media="(min-width: 1158px)" />
+                    <img src="/src/images/bouquet3-mobile.jpg" srcset="/src/images/bouquet3-mobile@2x.jpg"
+                        alt="a small bouquet of orange, red and burgundy flowers" />
+                </picture>
+                <div class="store-offers">
+                    <h3 class="store-offers-item">compliments</h3>
+                    <p class="store-offers-item-description">from $15</p>
+                </div>
+            </li>
+            <li class="store-list-element">
+                <picture>
+                    <source srcset="/src/images/bouquet1-tablet.jpg" srcset="/src/images/bouquet1-tablet@2x.jpg"
+                        media="(min-width: 768px) and (max-width: 1158px)" />
+                    <source srcset="/src/images/bouquet1.jpg" srcset="/src/images/bouquet1@2x.jpg"
+                        media="(min-width: 1158px)" />
+                    <img src="/src/images/bouquet1-mobile.jpg" srcset="/src/images/bouquet1-mobile@2x.jpg"
+                        alt="a small bouquet of pink and white flowers" class="img-2" />
+                </picture>
+                <div class="store-offers">
+                    <h3 class="store-offers-item">bouquets size S</h3>
+                    <p class="store-offers-item-description">from $25</p>
+                </div>
+            </li>
+            <li class="store-list-element">
+                <picture>
+                    <source srcset="/src/images/bouquet2-tablet.jpg" srcset="/src/images/bouquet2-tablet@2x.jpg"
+                        media="(min-width: 768px) and (max-width: 1158px)" />
+                    <source srcset="/src/images/bouquet2.jpg" srcset="/src/images/bouquet2@2x.jpg"
+                        media="(min-width: 1158px)" />
+                    <img src="/src/images/bouquet2-mobile.jpg" srcset="/src/images/bouquet2-mobile@2x.jpg"
+                        alt="a medium-size bouquet of white, blue and purple flowers" class="img-3" />
+                </picture>
+                <div class="store-offers">
+                    <h3 class="store-offers-item">bouquets size M</h3>
+                    <p class="store-offers-item-description">from $45</p>
+                </div>
+            </li>
+            <li class="store-list-element">
+                <picture>
+                    <source srcset="/src/images/bouquet4-tablet.jpg" srcset="/src/images/bouquet4-tablet@2x.jpg"
+                        media="(min-width: 768px) and (max-width: 1158px)" />
+                    <source srcset="/src/images/bouquet4.jpg" srcset="/src/images/bouquet4@2x.jpg"
+                        media="(min-width: 1158px)" />
+                    <img src="/src/images/bouquet4-mobile.jpg" srcset="/src/images/bouquet4-mobile@2x.jpg"
+                        alt="a big bouquet of beige, orange and pink flowers" class="img-4" />
+                </picture>
+                <div class="store-offers">
+                    <h3 class="store-offers-item">bouquets size L</h3>
+                    <p class="store-offers-item-description">from $60</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="store-button-div">
+        <button type="button" class="store-button" data-modal-open>Order flowers</button>
+    </div>
+    <div class="modal-contact is-hidden" data-modal>
+        <button type="button" class="close-button-modal" data-modal-close>
+            <svg width="18" height="18" class="icon-x">
+                <use href="/src/images/symbol-defs.svg#icon-x-modl"></use>
+            </svg>
+        </button>
+        <div>
+            <h4 class="title-contact">Contact us</h4>
+            <p class="legend">
+                If you have any additional questions or you want to clarify something before you make an
+                order please fill in your contact details. We will call you back.
+            </p>
+            <form>
+                <div class="form">
+                    <label class="label" for="user-name">Name</label>
+                    <input class="input" type="text" id="user-name" name="user-name" placeholder="Your name" required
+                        pattern="[A-Za-z]{5,}"
+                        title="Must contain only uppercase and lowercase letter, and at least 5 characters" />
+                </div>
+                <div class="form">
+                    <label class="label" for="email">Email</label>
+                    <input class="input" type="email" id="email" name="email" placeholder="Your email" required
+                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" />
+                </div>
+                <button class="button-send" type="submit">Send</button>
+            </form>
   <div class="modal-contact is-hidden" data-modal>
     <button type="button" class="close-button-modal" data-modal-close>
       <svg width="18" height="18" class="icon-x">
@@ -145,5 +245,6 @@
         <button class="button-send" type="submit">Send</button>
       </form>
     </div>
+</store>
   </div>
 </section>
