@@ -42,7 +42,7 @@ ol {
 
 @media (min-width: 320px) {
   .blog-h1 {
-    color: #000;
+    color: var(--black);
     font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
@@ -70,7 +70,7 @@ ol {
   .hr-blog {
     width: 202px;
     height: 1px;
-    background: #000;
+    background: var(--black);
     padding-right: 16px;
   }
 
@@ -126,7 +126,7 @@ ol {
     align-items: center;
     justify-content: center;
 
-    color: #000;
+    color: var(--black);
     text-align: center;
     font-family: Montserrat;
     font-size: 18px;
@@ -147,7 +147,7 @@ ol {
     background: var(--brand-color);
 
     /* button text */
-    color: #fff;
+    color: var(--white);
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
@@ -180,7 +180,7 @@ ol {
   }
   /* BLOG - Headline tablet */
   .blog-h2 {
-    color: #000;
+    color: var(--black);
     font-family: Montserrat;
     font-size: 44px;
     font-style: normal;
@@ -192,7 +192,7 @@ ol {
   .hr-blog {
     width: 573px;
     height: 1px;
-    background: #000;
+    background: var(--black);
     padding-right: 24px;
   }
 
@@ -239,7 +239,7 @@ ol {
   }
 
   .blog-text {
-    color: #000;
+    color: var(--black);
     font-family: Montserrat;
     font-size: 32px;
     font-style: normal;
@@ -257,7 +257,7 @@ ol {
     gap: 10px;
 
     /* BUTTON TEXT */
-    color: #fff;
+    color: var(--white);
     font-family: Montserrat;
     font-size: 28px;
     font-style: normal;
@@ -273,7 +273,7 @@ ol {
     height: 64px;
     flex-shrink: 0;
     stroke-width: 1px;
-    stroke: #fff;
+    stroke: var(--white);
     padding: 332px 670px 338px 34px;
   }
   .eclipse-right {
@@ -281,7 +281,7 @@ ol {
     height: 64px;
     flex-shrink: 0;
     stroke-width: 1px;
-    stroke: #fff;
+    stroke: var(--white);
     padding: 332px 33px 338px 671px;
   }
   .arrow-left-tablet {
@@ -289,14 +289,14 @@ ol {
     height: 0px;
     flex-shrink: 0;
     stroke-width: 1px;
-    stroke: #fff;
+    stroke: var(--white);
   }
   .arrow-right-tablet {
     width: 66px;
     height: 0px;
     flex-shrink: 0;
     stroke-width: 1px;
-    stroke: #fff;
+    stroke: var(--white);
   }
 }
 
