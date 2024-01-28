@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--black);
     background-color: var(--white);
 }
@@ -27,30 +27,54 @@ ol {
     padding-left: 0;
 }
 
+
+
 .link {
     text-decoration: none;
 }
 
 /*STORE*/
+.store-header-div {
+    width: 100%;
+}
+
 .store-header {
     margin-left: 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.store-header::after {
+    margin-left: 14px;
+    margin-right: 16px;
+    height: 1px;
+    content: ' ';
+    text-shadow: none;
+    background-color: var(--black);
+    flex-grow: 1;
+}
+
+.store-main-div {
+    display: flex;
 }
 
 .store-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 16px;
     margin: 32px 16px;
 }
 
 .store-list-element {
-    max-width: calc((100% - 16px) / 2);
+    width: calc((100% - 16px) / 2);
+    position: relative;
 }
 
 .store-offers {
     display: flex;
     flex-direction: column;
-    gap: 6px;
 }
 
 .store-offers-item {
@@ -58,6 +82,7 @@ ol {
     font-size: 16px;
     line-height: 19.5px;
     margin-bottom: 0;
+    margin-top: 12px;
 }
 
 .store-offers-item-description {
@@ -65,7 +90,7 @@ ol {
     font-size: 12px;
     line-height: 14.63px;
     opacity: 60%;
-    margin-top: 0;
+    margin-top: 6px;
 }
 
 .store-button-div {
@@ -93,6 +118,112 @@ ol {
     background-color: var(--brand-color-focus);
 }
 
+/*TABLET*/
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+    .store-header {
+        font-size: 44px;
+    }
+
+    .store-header::after {
+        margin-left: 16px;
+        margin-right: 24px;
+    }
+
+    .store-main-div {
+        max-width: 768px;
+    }
+
+    .store-list {
+        width: 100%;
+    }
+
+    .store-list-element {
+        width: 344px;
+        height: 491px;
+    }
+
+    .store-offers-item::after {
+        content: '';
+        height: 1px;
+        background-color: var(--black);
+        flex-grow: 1;
+        margin-left: 8px;
+    }
+
+    .store-button {
+        width: 280px;
+        height: 64px;
+        font-size: 28px;
+    }
+
+    .store-offers-item {
+        font-size: 32px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+    }
+
+    .store-offers-item-description {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    picture {
+        min-width: calc((100% - 32px) / 2);
+    }
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 1158px) {
+    .store-header::after {
+        margin-left: 16px;
+        margin-right: 24px;
+    }
+
+    .store-list {
+        margin: 60px 24px;
+        gap: 32px;
+    }
+
+    .store-list-element {
+        width: 600px;
+        height: 640px;
+    }
+
+    .store-offers-item {
+        font-size: 36px;
+        font-weight: 500;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+    }
+
+    .store-offers-item-description {
+        font-size: 28px;
+        margin-top: 15px;
+    }
+
+    .store-offers-item::after {
+        content: '';
+        height: 1px;
+        background-color: var(--black);
+        flex-grow: 1;
+        margin-left: 8px;
+    }
+
+    .store-button {
+        width: 280px;
+        height: 64px;
+        font-size: 28px;
+    }
+
+    .store-header {
+        font-size: 44px;
+    }
+}
+
 /* ==============MODAL WINDOW-BUTTON================== */
 
 .modal-contact {
@@ -100,7 +231,7 @@ ol {
     max-width: 272px;
     height: 357px;
     background-color: var(--white);
-    position: absolute;
+    position: fixed;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
@@ -128,9 +259,6 @@ ol {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.icon-x {
 }
 
 #icon-x-mobile path {
@@ -170,14 +298,14 @@ ol {
     font-weight: 500;
     border-radius: 4px;
     border: 1px solid var(--milk);
-    color: rgba(0, 0, 0, 0.40);
+    color: rgba(0, 0, 0, 0.4);
     padding: 10px 12px;
     margin-bottom: 14px;
 }
 
 .input:hover,
 .input:focus {
-    border: 1px solid rgba(17, 17, 17, 0.70);
+    border: 1px solid rgba(17, 17, 17, 0.7);
 }
 
 .input:not(:placeholder-shown):required:invalid {
@@ -196,7 +324,7 @@ ol {
     padding: 10px 0px;
     justify-content: center;
     align-items: center;
-    background-color: rgba(232, 111, 84, 0.40);
+    background-color: rgba(232, 111, 84, 0.4);
     border-radius: 8px;
     border: none;
     color: var(--white);
