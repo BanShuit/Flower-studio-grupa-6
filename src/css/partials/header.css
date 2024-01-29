@@ -160,6 +160,7 @@ header.modal-open {
         padding: 0;
     }
 }
+
 @media screen and (min-width: 1280px) {
     .list-header {
         display: flex;
