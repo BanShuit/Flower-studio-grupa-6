@@ -117,7 +117,7 @@ ol {
 }
 
 /*TABLET*/
-@media screen and (min-width: 768px) and (max-width: 1158px) {
+@media screen and (min-width: 768px) {
     .store-header {
         font-size: 44px;
     }
@@ -173,7 +173,7 @@ ol {
 }
 
 /*DESKTOP*/
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
     .store-header::after {
         margin-left: 16px;
         margin-right: 24px;
