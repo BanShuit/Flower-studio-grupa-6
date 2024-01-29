@@ -220,6 +220,9 @@ ol {
     .store-header {
         font-size: 44px;
     }
+        .store-main-div {
+            max-width: 1280px;
+        }
 }
 
 /* ==============MODAL WINDOW-BUTTON================== */
