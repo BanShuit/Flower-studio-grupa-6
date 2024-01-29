@@ -33,6 +33,7 @@ ol {
   width: 100%;
 }
 .blog-header {
+  align-items: center;
   margin-left: 16px;
   text-transform: uppercase;
   color: #000;
@@ -113,6 +114,13 @@ ol {
 @media (min-width: 320px) {
 }
 @media (min-width: 768px) {
+  .blog-svg {
+    width: 61px;
+    height: 61px;
+  }
+  .hidden-media {
+    display: flex;
+  }
   .blog-svg {
     width: 61px;
     height: 61px;

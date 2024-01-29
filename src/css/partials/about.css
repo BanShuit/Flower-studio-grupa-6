@@ -27,6 +27,7 @@
 .about-container {
   display: flex;
   flex-direction: column;
+  margin-left: 16px;
   gap: 16px;
   justify-content: center;
   padding-top: 32px;
@@ -60,6 +61,9 @@
   .about-header {
     font-size: 44px;
   }
+  .about-header::after {
+    min-width: 538px;
+  }
 
   .about-text {
     font-size: 20px;
@@ -73,8 +77,16 @@
     padding-top: 26px;
   }
 
+  .about-header::after {
+    min-width: 1050px;
+  }
+
   .about-text {
     max-width: 510px;
     font-size: 22px;
+  }
+
+  .about-header::after {
+    max-width: 1050px;
   }
 }
