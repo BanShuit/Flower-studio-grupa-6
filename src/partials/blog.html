@@ -1,71 +1,77 @@
-<section >
- <h2 class="blog-header">Blog</h2>
- <div class="blog-div">
-  <ul class="blog-list">
-  <li>
-    <picture class="img-1">
-      <source srcset="/src/images/bouquet4-tablet.jpg" srcset="/src/images/flowers-img4-tablet@2x.jpg"
-        media="(min-width: 768px) and (max-width: 1158px)" />
-      <source srcset="/src/images/flowers-img4.jpg" srcset="/src/images/flowers-img4@2x.jpg" media="(min-width: 1158px)" />
-      <img src="/src/images/flowers-img4-mobile.jpg" srcset="/src/images/flowers-img4-mobile@2x.jpg"
-        alt="Green-Flower" />
-    </picture>
-  </li>
-  <li>
-    <picture class="img-1">
-      <source srcset="/src/images/flowers-img5-tablet.jpg" srcset="/src/images/flowers-img5-tablet@2x.jpg" media="(min-width: 768px) and (max-width: 1158px)" />
-      <source srcset="/src/images/flowers-img5.jpg" srcset="/src/images/flowers-img5@2x.jpg" media="(min-width: 1158px)" />
-      <img src="/src/images/flowers-img5-mobile.jpg" srcset="/src/images/flowers-img5-mobile@2x.jpg"
-       alt="red flower on red background" />
-  </li>
-  <li class="hidden-media">
-    <picture class="img-1">
-      <source srcset="/src/images/flowers-img6-tablet.jpg" srcset="/src/images/flowers-img6-tablet@2x.jpg" media="(min-width: 768px) and (max-width: 1158px)" />
-      <source srcset="/src/images/flowers-img6.jpg" srcset="/src/images/flowers-img6@2x.jpg" media="(min-width: 1158px)" />
-      <img src="/src/images/flowers-img6-mobile.jpg" srcset="/src/images/flowers-img6-mobile@2x.jpg" 
-      alt="Blue-Flower" />
-  </li>
-  </ul>
+<section class="general-container">
+  <div class="blog-header-container">
+  <h2 class="blog-header">Blog</h2>
+</div>
+  <div class="blog-div">
+   <ul class="blog-list">
+   <li>
+     <picture class="img-1">
+       <source srcset="/src/images/flowers-img4-tablet.jpg" 
+       srcset="/src/images/flowers-img4-tablet@2x.jpg"
+         media="(min-width: 768px) and (max-width: 1280px)" />
+       <source srcset="/src/images/flowers-img4.jpg" 
+       srcset="/src/images/flowers-img4@2x.jpg" 
+       media="(min-width: 1280px)" />
+       <img src="/src/images/flowers-img4-mobile.jpg" 
+       srcset="/src/images/flowers-img4-mobile@2x.jpg"
+         alt="Green-Flower" />
+     </picture>
+   </li>
+   <li>
+     <picture class="img-1">
+       <source srcset="/src/images/flowers-img5-tablet.jpg" srcset="/src/images/flowers-img5-tablet@2x.jpg" media="(min-width: 768px) and (max-width: 1280px)" />
+       <source srcset="/src/images/flowers-img5.jpg" srcset="/src/images/flowers-img5@2x.jpg" media="(min-width: 1280px)" />
+       <img src="/src/images/flowers-img5-mobile.jpg" srcset="/src/images/flowers-img5-mobile@2x.jpg"
+        alt="red flower on red background" />
+   </li>
+   <li class="hidden-media">
+     <picture class="img-1">
+       <source srcset="/src/images/flowers-img6-tablet.jpg" srcset="/src/images/flowers-img6-tablet@2x.jpg" media="(min-width: 768px) and (max-width: 1280px)" />
+       <source srcset="/src/images/flowers-img6.jpg" srcset="/src/images/flowers-img6@2x.jpg" media="(min-width: 1280px)" />
+       <img src="/src/images/flowers-img6-mobile.jpg" srcset="/src/images/flowers-img6-mobile@2x.jpg" 
+       alt="Blue-Flower" />
+   </li>
+   </ul>
+  </div>
+ <div class="blog-arrows">
+   <svg class="blog-svg">
+     <use href="/src/images/symbol-defs.svg#arrow-left"></use>
+   </svg>
+   <svg class="blog-svg">
+     <use href="/src/images/symbol-defs.svg#arrow-right"></use>
+   </svg>
  </div>
-<div class="blog-arrows">
-  <svg class="blog-svg">
-    <use href="/src/images/symbol-defs.svg#arrow-left"></use>
-  </svg>
-  <svg class="blog-svg">
-    <use href="/src/images/symbol-defs.svg#arrow-right"></use>
-  </svg>
-</div>
-<div class="blog-par">
-  <p class="blog-style-paragraf">Follow to our newsletter</p>
-</div>
-<div class="blog-button-div">
-  <button type="button" class="blog-button" data-modal-sub-open>Subscribe</button>
-</div>
-<div class="backdrop is-hidden"data-modal-sub >
-  <div class="modal">
-    <button class="close-btn" type="button" data-modal-sub-close>
-      <svg width="18" height="18" class="icon-x">
-        <use href="/src/images/symbol-defs.svg#icon-x-modl"></use>
-      </svg>
-    </button>
-    <div class="newsletter-image">
-    </div>
-    <div class="newsletter-content">
-      <h2 class="newsletter-header">Follow to our newsletter</h2>
-      <p class="newsletter-text">Be the first to get exclusive offers and the latest news on our product directly in
-        your box.</p>
-        </div>
-      <form>
-        <div class="label-container">
-          <label class="label-modal" for="user-sub-email">Email</label>
-          <div class="input-container">
-            <input class="input-order-form" id="user-sub-email" type="email" name="user-email" placeholder="Your email" required />
-          </div>
-        </div>
-      <div class="blog-button-div">
-  <button type="submit" class="blog-button">Subscribe</button>
+ <div class="blog-par">
+   <p class="blog-style-paragraf">Follow to our newsletter</p>
+ </div>
+ <div class="blog-button-div">
+   <button type="button" class="blog-button" data-modal-sub-open>Subscribe</button>
+ </div>
+ <div class="backdrop is-hidden"data-modal-sub >
+   <div class="modal">
+     <button class="close-btn" type="button" data-modal-sub-close>
+       <svg width="18" height="18" class="icon-x">
+         <use href="/src/images/symbol-defs.svg#icon-x-modl"></use>
+       </svg>
+     </button>
+     <div class="newsletter-image">
      </div>
-</form>
-</div>
-</div>
-</section>
+     <div class="newsletter-content">
+       <h2 class="newsletter-header">Follow to our newsletter</h2>
+       <p class="newsletter-text">Be the first to get exclusive offers and the latest news on our product directly in
+         your box.</p>
+         <form>
+           <div class="label-container-blog">
+             <label class="label-modal-blog" for="user-sub-email">Email</label>
+             <div class="input-container">
+               <input class="input-order-form-blog" id="user-sub-email" type="email" name="user-email" placeholder="Your email" required />
+             </div>
+           </div>
+         <div class="blog-button-div-newsletter">
+     <button type="submit" class="blog-button-newsletter">Subscribe</button>
+        </div>
+   </form>
+         </div>      
+  </div>
+ </div>
+ </section>

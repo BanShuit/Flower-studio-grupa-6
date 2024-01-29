@@ -121,14 +121,10 @@ ol {
 }
 
 /*TABLET*/
-@media screen and (min-width: 768px) and (max-width: 1158px) {
-  .store {
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-  .store-header {
-    font-size: 44px;
-  }
+@media screen and (min-width: 768px) {
+    .store-header {
+        font-size: 44px;
+    }
 
   .store-header::after {
     margin-left: 16px;
@@ -180,15 +176,11 @@ ol {
 }
 
 /*DESKTOP*/
-@media screen and (min-width: 1158px) {
-  .store {
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-  .store-header::after {
-    margin-left: 16px;
-    margin-right: 24px;
-  }
+@media screen and (min-width: 1280px) {
+    .store-header::after {
+        margin-left: 16px;
+        margin-right: 24px;
+    }
 
   .store-list {
     margin: 60px 24px;
@@ -227,9 +219,18 @@ ol {
     font-size: 28px;
   }
 
-  .store-header {
-    font-size: 44px;
-  }
+    .store-button {
+        width: 280px;
+        height: 64px;
+        font-size: 28px;
+    }
+
+    .store-header {
+        font-size: 44px;
+    }
+        .store-main-div {
+            max-width: 1280px;
+        }
 }
 
 /* ==============MODAL WINDOW-BUTTON================== */

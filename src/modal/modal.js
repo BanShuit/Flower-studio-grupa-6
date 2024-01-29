@@ -6,6 +6,7 @@
     openModalSubBtn: document.querySelector('[data-modal-sub-open]'),
     closeModalSubBtn: document.querySelector('[data-modal-sub-close]'),
     modalSub: document.querySelector('[data-modal-sub]'),
+    
   };
 
   refs.openModalBtns.forEach(openModalBtn => openModalBtn.addEventListener('click', toggleModal));

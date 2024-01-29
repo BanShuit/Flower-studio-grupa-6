@@ -30,6 +30,7 @@
   margin-left: 16px;
   gap: 16px;
   justify-content: center;
+  padding-top: 32px;
 }
 
 .about-text {
@@ -54,8 +55,12 @@
     flex-direction: row;
     align-items: center;
     gap: 54px;
+    padding-top: 30px;
   }
 
+  .about-header {
+    font-size: 44px;
+  }
   .about-header::after {
     min-width: 538px;
   }
@@ -69,10 +74,7 @@
 @media (min-width: 1158px) {
   .about-container {
     gap: 90px;
-  }
-
-  .about-header {
-    font-size: 44px;
+    padding-top: 26px;
   }
 
   .about-header::after {
