@@ -367,7 +367,7 @@ ol {
     flex-direction: row;
     width: 860px;
     height: 528px;
-    transform: translate(-65%, -50%);
+    transform: translate(-50%, -50%);
   }
 
   .newsletter-image {
