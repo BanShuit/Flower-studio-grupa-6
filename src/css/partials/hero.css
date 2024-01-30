@@ -6,6 +6,7 @@
   --white: #ffffff;
   --error-state: #e74a3b;
   --correct-state: #3cbc81;
+  --modal-color:#D7D7D7 ;
 }
 
 /*mobile*/
@@ -310,6 +311,8 @@ width: 100%;
   color: rgba(0, 0, 0, 0.4);
   padding: 10px 12px;
   margin-bottom: 14px;
+  border-radius: 4px;
+  border: 1px solid var(--modal-color);
 }
 
 .input-hero:hover,
@@ -376,6 +379,8 @@ width: 100%;
     font-size: 14px;
     padding: 16px;
     margin-bottom: 24px;
+    border-radius: 4px;
+    border: 1px solid var(--modal-color);
   }
 
   .button-send-hero {
@@ -426,6 +431,8 @@ width: 100%;
     font-size: 14px;
     padding: 16px;
     margin-bottom: 24px;
+    border-radius: 4px;
+    border: 1px solid var(--modal-color);
   }
 
   .button-send-hero {
