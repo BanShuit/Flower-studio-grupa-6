@@ -34,7 +34,7 @@
 }
 
 .about-text {
-  max-width: 288px;
+  max-width: 480px;
   width: 100%;
   color: #000;
   font-family: Montserrat;
@@ -45,6 +45,7 @@
 
 .about-photo {
   display: flex;
+  max-width: 480px;
 }
 
 @media (min-width: 480px) {
