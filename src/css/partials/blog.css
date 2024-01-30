@@ -175,7 +175,7 @@ ol {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-103%, -50%);
   z-index: 100;
 }
 
@@ -307,6 +307,7 @@ ol {
   .modal {
     width: 588px;
     height: 644px;
+    transform: translate(-73%, -50%);
   }
 
   .newsletter-image {
@@ -366,6 +367,7 @@ ol {
     flex-direction: row;
     width: 860px;
     height: 528px;
+    transform: translate(-65%, -50%);
   }
 
   .newsletter-image {
