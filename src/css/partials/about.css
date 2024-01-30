@@ -77,10 +77,6 @@
     padding-top: 26px;
   }
 
-  .about-header::after {
-    min-width: 1050px;
-  }
-
   .about-text {
     max-width: 510px;
     font-size: 22px;
