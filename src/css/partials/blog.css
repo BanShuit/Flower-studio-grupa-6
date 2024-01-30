@@ -307,7 +307,7 @@ ol {
   .modal {
     width: 588px;
     height: 644px;
-    transform: translate(-73%, -50%);
+    transform: translate(-50%, -50%);
   }
 
   .newsletter-image {
