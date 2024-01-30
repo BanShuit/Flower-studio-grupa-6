@@ -16,13 +16,15 @@
   color: white;
   font-family: Inter;
   letter-spacing: 0em;
-  width: 320px;
   display: flex;
   justify-content: space-between;
+  align-content: space-evenly;
   flex-wrap: wrap;
   padding: 32px 16px;
   row-gap: 32px;
+  column-gap: 16px;
   margin: 0 auto;
+  min-width: 320px;
 }
 
 .footer-box {
@@ -88,6 +90,12 @@
   width: 73px;
   height: 57px;
   fill: white;
+}
+
+@media screen and (min-width: 480px) {
+  .footer-box-media {
+    width: 70px;
+  }
 }
 
 @media screen and (min-width: 768px) {
