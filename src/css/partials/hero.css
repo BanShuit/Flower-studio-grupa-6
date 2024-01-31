@@ -6,7 +6,8 @@
   --white: #ffffff;
   --error-state: #e74a3b;
   --correct-state: #3cbc81;
-  --modal-color:#D7D7D7 ;
+  --grey: #5C5C5C;
+  --milk: #D7D7D7;
 }
 
 /*mobile*/
@@ -229,21 +230,23 @@
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100%;
+  position: fixed;
+  top: 0;
   overflow: auto;
   z-index: 101;
 }
 
 .modal-hero-content {
-width: 100%;
+  width: 100%;
   max-width: 272px;
   height: 357px;
   background-color: var(--white);
   position: fixed;
-  transform: translate(5%, -25%)scale(1);
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 28px 16px;
-  top: 50%;
-  z-index: 100;
 }
 
 .is-hidden {
@@ -354,8 +357,6 @@ width: 100%;
     max-width: 480px;
     height: 511px;
     padding: 48px 32px;
-    top: 25%;
-    transform: translate(25%, 35%)scale(1);
   }
 
   .title-hero-modal {
@@ -404,10 +405,8 @@ width: 100%;
 @media screen and (min-width: 1280px) {
   .modal-hero-content {
     max-width: 480px;
-    height: 511px;
-    padding: 48px 32px;
-    transform: translate(70%, 5%) scale(1);
-    top: 15%;
+      height: 511px;
+      padding: 48px 32px;
   }
 
   .title-hero-modal {
