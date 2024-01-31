@@ -153,19 +153,16 @@
 /*desktop*/
 
 @media screen and (min-width: 1280px) {
-  .icon-hero-logo {
-    stroke: black;
-    width: 58px;
-  }
-
-  .icon-hero-div {
-    width: 58px;
-    height: 10px;
+  .title-hero::after {
+    content: "";
     position: absolute;
-    margin-left: 160px;
-    margin-top: 110px;
-  }
+    top: 18px;
+    right: 18px;
+    width: 58px;
+    height: 8px;
+    background-color: var(--black);
 
+  }
   .section-hero {
     margin-left: 24px;
     margin-right: 24px;
